@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    int grade[100],i,a,aa=0,t=0,p=0,t1=0;
+     scanf("%d",&a);
+    for (i=0; i<a; i++) {
+    scanf("%d",&grade[i]);
+    }
+
+     for (i=0; i<a; i++) 
+     {
+         aa = grade[i] % 5;
+         t = 5 - aa;
+         p = grade[i] + t;
+            t1 = p - grade[i];
+            if(grade[i] > 35){
+         if(t1 < 3){
+           //    printf("%d\n",grade[i] + t);
+           grade[i] = grade[i] + t;
+     }
+            }
+    }
+
+    for (i=0; i<a; i++) {
+    printf("%d\n",grade[i]);
+    }
+
+return 0;
+}
