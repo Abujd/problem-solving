@@ -1,0 +1,32 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int x1,v1,x2,v2,i,flg =0;
+    scanf("%d%d%d%d",&x1,&v1,&x2,&v2);  
+    int add = x1 + v1 ;
+    int add2 = x2 + v2 ;
+
+for(i=0;i<10;i++)
+{
+    if(add == add2)
+    {
+        flg++;
+    }
+add = add + v1;
+add2 = add2 + v2;
+}
+    if(flg > 0)
+    printf("YES");
+    else
+       printf("NO");
+       return 0;
+} 
