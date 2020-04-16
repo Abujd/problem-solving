@@ -1,0 +1,25 @@
+#include <stdio.h>
+ int main()
+ {
+     int arr[1000],i,aa,mi =0, ma=0,mic =0, mac=0;
+     scanf("%d",&aa);
+     for(i=0;i<aa;i++)
+     {
+         scanf("%d",&arr[i]);
+     }
+     mi=ma=arr[0];
+     for(i=1;i<aa;i++)
+    {
+        if (arr[i] < ma) {
+
+        ma = arr[i];
+        mac++;
+        }
+         if (arr[i] > mi) {
+
+        mi = arr[i];
+        mic++;
+        }
+    }
+    printf("%d %d",mic,mac);
+ }
