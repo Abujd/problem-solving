@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int arr[1000],aa,d,s,i,sum=0,c=0;
+    scanf("%d",&aa);
+    for(i=0;i<aa;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d%d",&d,&s);
+    for(i=0;i<aa;i++)
+    {   sum=0;
+        for(int j=i;j<s+i;j++)
+        {
+            sum =sum+arr[j];
+        }
+        if(sum == d)
+        {
+            c++;
+        }
+    }
+  printf("%d",c);
+
+
+}
