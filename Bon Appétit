@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int arr[100000],k,aa,v,i,total_cost=0,actual=0,dcharged=0,dactual=0;
+    scanf("%d%d",&aa,&k);
+
+    for(i=0;i<aa;i++)
+    {
+        scanf("%d",&arr[i]);
+        if(i != k )
+        {
+            total_cost = total_cost + arr[i];
+        }
+    }
+    scanf("%d",&dactual);
+dcharged = total_cost / 2;
+if(dcharged == dactual)
+{
+    printf("Bon Appetit");
+}
+else
+{
+    printf("%d",dactual - dcharged);
+}
+return 0;
+    
+}
